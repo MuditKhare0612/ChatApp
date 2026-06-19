@@ -83,4 +83,6 @@ app.get("/:path", function(req, res) {
 });
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT);
+server.listen(PORT, function() {
+    console.log("server listening on http://localhost:"+PORT+"/")
+});

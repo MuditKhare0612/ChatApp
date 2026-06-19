@@ -22,7 +22,7 @@ const msgInput = document.getElementById("msg");
 const messagesEl = document.getElementById("messages");
 const editBtn = document.querySelector(".editName");
 const usersEl = document.querySelector(".userWork");
-const msgForm = document.querySelector(".msgForm");
+const submitBtn = document.querySelector(".submit");
 
 function createMsgEl(message) {
     let msg = message.split("!@#$")[0];
@@ -56,8 +56,7 @@ function emptyUsersEl() {
 editBtn.addEventListener("click", ()=> {
     name = createName(true);
 })
-msgForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+submitBtn.addEventListener("click", (e) => {
     if (msgInput.value.trim() === "") return;
     const msg = msgInput.value + `!@#$${name}`;
     msgInput.value = '';
