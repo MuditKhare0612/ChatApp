@@ -1,0 +1,18 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Mudit Khare",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3",
+    "url": "^0.11.4"
+  }
+}

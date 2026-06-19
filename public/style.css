@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: white;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#msg {
+    background: rgb(40, 40, 40);
+}
+
+#msg, #send {
+    margin-top: 20px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+#send {
+    width: 100px;
+    background: rgb(126, 126, 255);
+    transition: all .4s;
+}
+#send:hover {
+    background: rgb(100, 100, 255);
+    box-shadow: inset 0 0 5px black;
+}
+
+.main {
+    min-height: 100%;
+    background: rgba(0, 0, 0, .9);
+    padding: 25px;
+    display: flex;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.message {
+    margin-top: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+.chatWork, .userWork {
+    /* border: 2px solid; */
+    min-width: 50%;
+    max-width: 50%;
+    overflow: scroll;
+    padding-right: 15px;
+}
+.chatWork {
+    border-right: 2px solid green;
+}
+.chatWork::-webkit-scrollbar, .userWork::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+    height: 8px;
+}
+.chatWork::-webkit-scrollbar-thumb, .userWork::-webkit-scrollbar-thumb {
+    background-color: rgb(131, 131, 131);
+    border-radius: 20px;
+}
+.chatWork::-webkit-scrollbar-corner, .userWork::-webkit-scrollbar-corner {
+    background: transparent;
+}
+.editName {
+    color: rgb(100, 100, 255);
+    text-decoration: none;
+    transition: all .2s;
+}
+.editName:hover {
+    color: rgb(80, 80, 255);
+    cursor: pointer;
+}
+.userWork {
+    padding: 0 25px;
+}

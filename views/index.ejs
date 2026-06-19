@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <div class="chatWork">
+                <h1>Chatting App</h1>
+                <form class="msgForm">
+                    <input type="text" placeholder="Enter Message" id="msg" />
+                    <br />
+                    <button id="send" type="submit">Send</button>
+                </form>
+                <div id="messages"></div>
+            </div>
+            <div class="userWork">
+                <span class="editName">Edit Your Name</span>
+                <h1>Users:-</h1>
+            </div>
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/script.js"></script>
+    </body>
+</html>
